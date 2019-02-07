@@ -4,10 +4,11 @@
   padding: $hamburger-padding-y $hamburger-padding-x;
   display: inline-block;
   cursor: pointer;
-
+  border: none;
+  
   transition-property: opacity, filter;
   transition-duration: 0.15s;
-  transition-timing-function: linear;
+  transition-timing-function: linear; 
 
   // Normalize (<button>)
   font: inherit;
