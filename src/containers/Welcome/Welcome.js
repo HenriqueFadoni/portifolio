@@ -18,7 +18,7 @@ class Welcome extends Component {
         let menu = "hamburger hamburger--vortex";
 
         if (this.state.isMenuActv) {
-            menu = "hamburger hamburger--vortex is-active";
+            menu += " is-active";
         }
 
         return (

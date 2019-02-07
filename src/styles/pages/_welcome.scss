@@ -1,5 +1,8 @@
 .section-welcome {
     background-color: $color-primary;
+    background-image: 
+        linear-gradient(rgba($color-primary, 0.9), rgba($color-primary, 0.9)), 
+        url('../images/backgr-welcome.jpg');
     position: relative;
     top: 0;
     height: 100vh;
