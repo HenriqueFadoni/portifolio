@@ -27,8 +27,7 @@ class Welcome extends Component {
                     classMenu={menu}
                     menuChange={this.menuHandler} />
                 <WelcomeText />
-                <ion-icon name="logo-github"></ion-icon>
-                <ion-icon name="logo-linkedin"></ion-icon>
+                <WelcomeIcons />
             </section>
         );
     }
