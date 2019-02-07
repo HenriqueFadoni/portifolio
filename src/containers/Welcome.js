@@ -33,6 +33,8 @@ class Welcome extends Component {
                         <h3>I'm a <span className="name-color">Front-End Developer</span></h3>
                     </div>
                 </div>
+                <ion-icon name="logo-github"></ion-icon>
+                <ion-icon name="logo-linkedin"></ion-icon>
             </section>
         );
     }
