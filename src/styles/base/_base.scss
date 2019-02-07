@@ -17,10 +17,20 @@ body {
 ion-icon {
     font-size: 70px;
     padding: 10px;
-    cursor: pointer;
     transition: 1s;
+}
+
+a {
+    &,
+    &:hover,
+    &:active,
+    &:visited {
+        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
+    }
 
     &:hover {
-        color: $color-secondary;
+        color: $color-secondary
     }
 }
