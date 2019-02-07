@@ -14,10 +14,12 @@ body {
 
 .welcome-text-1 { 
     padding: 1rem;
+    animation: welcomeappear2 2s;
 }
 
 .welcome-text-2 {
     padding:  0 0 0 20%;
+    animation: welcomeappear1 2s;
 }
 
 .name-color {

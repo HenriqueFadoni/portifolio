@@ -1,0 +1,19 @@
+@keyframes welcomeappear1 {
+    0% {
+        padding: 10% 0 0 20%;
+        opacity: 0;
+    }
+    100% {
+        padding: 0 0 0 20%;
+        opacity: 1;
+    }
+}
+
+@keyframes welcomeappear2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
