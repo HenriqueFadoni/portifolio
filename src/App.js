@@ -2,10 +2,32 @@ import React, { Component } from 'react';
 import './styles/main.scss';
 
 class App extends Component {
+  state = {
+    isMenuActv: false
+  }
+
+  menuHandler = () => {
+    const toggleHandler = !this.state.isMenuActv;
+    this.setState({isMenuActv: toggleHandler});
+  }
+
   render() {
+    let menu = "hamburger hamburger--vortex";
+    if (this.state.isMenuActv) {
+      menu = "hamburger hamburger--vortex is-active";
+    }
     return (
       <>
         <section className="section-welcome">
+          <button 
+            class={menu}
+            type="button"
+            onClick={this.menuHandler}>
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+
           <div className="welcome-text-container">
             <div className="welcome-text-1">
               <h1>Hello,</h1>
@@ -15,11 +37,6 @@ class App extends Component {
               <h3>I'm a <span className="name-color">Front-End Developer</span></h3>
             </div>
           </div>
-          <button class="hamburger hamburger--vortex" type="button">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
         </section>
         <section className="section-about"></section>
       </>
