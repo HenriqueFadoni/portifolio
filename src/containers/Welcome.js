@@ -20,10 +20,10 @@ class Welcome extends Component {
 
         return (
             <section className="section-welcome">
-                <HumburgerMenu 
-                    classMenu={menu} 
-                    menuChange={this.menuHandler}/>
-                
+                <HumburgerMenu
+                    classMenu={menu}
+                    menuChange={this.menuHandler} />
+
                 <div className="welcome-text-container">
                     <div className="welcome-text-1">
                         <h1>Hello,</h1>
