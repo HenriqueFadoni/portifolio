@@ -15,5 +15,12 @@ body {
 }
 
 ion-icon {
-    font-size: 64px;
+    font-size: 70px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+    &:hover {
+        color: $color-secondary;
+    }
 }

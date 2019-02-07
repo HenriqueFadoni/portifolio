@@ -1,7 +1,7 @@
 import React from 'react';
 
 const WelcomeIcons = () => (
-    <div>
+    <div className="large-icons-container">
         <ion-icon name="logo-github"></ion-icon>
         <ion-icon name="logo-linkedin"></ion-icon>
     </div>
