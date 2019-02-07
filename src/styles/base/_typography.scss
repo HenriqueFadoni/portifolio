@@ -5,11 +5,11 @@ body {
 }
 
 .welcome-text-container {
+    position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 50%;
-    position: absolute;
+    transform: translate(-50%, -50%);
 }
 
 .welcome-text-1 { 
@@ -21,5 +21,5 @@ body {
 }
 
 .name-color {
-    color:#00BFFF;
+    color: $color-secondary;
 }
