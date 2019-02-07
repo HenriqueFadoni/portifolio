@@ -1,4 +1,8 @@
 .hamburger-menu-container {
     position: absolute;
+    opacity: 0;
     right: 0;
+    animation: hamburgermenu 0.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
 }
