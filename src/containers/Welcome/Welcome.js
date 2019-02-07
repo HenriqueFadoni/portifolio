@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+
 import HumburgerMenu from '../../components/HumburgerMenu/HumburgerMenu';
+import WelcomeText from '../../components/WelcomeText/WelcomeText';
+import WelcomeIcons from '../../components/WelcomeIcons/WelcomeIcons';
 
 class Welcome extends Component {
     state = {
@@ -23,16 +26,7 @@ class Welcome extends Component {
                 <HumburgerMenu
                     classMenu={menu}
                     menuChange={this.menuHandler} />
-
-                <div className="welcome-text-container">
-                    <div className="welcome-text-1">
-                        <h1>Hello,</h1>
-                    </div>
-                    <div className="welcome-text-2">
-                        <h3>My name is <span className="name-color">Henrique Fadoni</span>,</h3>
-                        <h3>I'm a <span className="name-color">Front-End Developer</span></h3>
-                    </div>
-                </div>
+                <WelcomeText />
                 <ion-icon name="logo-github"></ion-icon>
                 <ion-icon name="logo-linkedin"></ion-icon>
             </section>
