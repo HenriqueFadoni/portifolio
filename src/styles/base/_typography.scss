@@ -3,3 +3,23 @@ body {
     font-weight: 400;
     color: black;
 }
+
+.welcome-text-container {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    position: absolute;
+}
+
+.welcome-text-1 { 
+    padding: 1rem;
+}
+
+.welcome-text-2 {
+    padding:  0 0 0 20%;
+}
+
+.name-color {
+    color:#00BFFF;
+}
