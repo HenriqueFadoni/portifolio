@@ -15,6 +15,11 @@ class App extends Component {
               <h3>I'm a <span className="name-color">Front-End Developer</span></h3>
             </div>
           </div>
+          <button class="hamburger hamburger--vortex" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
         </section>
         <section className="section-about"></section>
       </>
