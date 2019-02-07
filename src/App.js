@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Welcome from './containers/Welcome';
+import Welcome from './containers/Welcome/Welcome';
 import './styles/main.scss';
 
 class App extends Component {

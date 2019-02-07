@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import HumburgerMenu from '../components/HumburgerMenu';
+import HumburgerMenu from '../../components/HumburgerMenu/HumburgerMenu';
 
 class Welcome extends Component {
     state = {
