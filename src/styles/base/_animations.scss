@@ -42,3 +42,17 @@
         top: 82vh;
     }
 }
+
+// == Scroll Btn ==
+
+@keyframes scrollbtn {
+    0% {
+        top: 70vh;
+    }
+    50% {
+        top: 75vh;
+    }
+    100% {
+        top: 70vh;
+    }
+}
