@@ -44,8 +44,15 @@
 }
 
 // == Scroll Btn ==
-
-@keyframes scrollbtn {
+@keyframes scrollBtnAppear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes scrollBtn {
     0% {
         top: 70vh;
     }
