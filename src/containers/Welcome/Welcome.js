@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import HumburgerMenu from '../../components/HumburgerMenu/HumburgerMenu';
 import WelcomeText from '../../components/WelcomeText/WelcomeText';
 import WelcomeIcons from '../../components/WelcomeIcons/WelcomeIcons';
+import WelcomeArrow from '../../components/WelcomeArrow/WelcomeArrow';
 
 class Welcome extends Component {
     state = {
@@ -26,8 +27,9 @@ class Welcome extends Component {
                 <HumburgerMenu
                     classMenu={menu}
                     menuChange={this.menuHandler} />
-                <WelcomeText />
-                <WelcomeIcons />
+                <WelcomeText/>
+                <WelcomeIcons/>
+                <WelcomeArrow/>
             </section>
         );
     }

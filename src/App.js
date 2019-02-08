@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <>
         <Welcome />
-        <section className="section-about"></section>
+        <section id="section-02" className="section-about"></section>
       </>
     );
   }
