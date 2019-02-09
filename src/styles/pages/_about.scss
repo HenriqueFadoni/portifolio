@@ -1,5 +1,7 @@
 .section-about {
     width: auto;
     height: 100vh;
-    background-color: blue;
+    background-color: #f7f7f7;
+
+    clip-path: polygon(80% 0,0 0, 0 100%, 70% 100%)
 }
