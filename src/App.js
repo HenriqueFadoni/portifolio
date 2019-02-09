@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Welcome from './containers/Welcome/Welcome';
+import About from './containers/About/About';
 import './styles/main.scss';
 
 class App extends Component {
@@ -8,7 +9,7 @@ class App extends Component {
     return (
       <>
         <Welcome />
-        <section id="section-02" className="section-about"></section>
+        <About />
       </>
     );
   }
