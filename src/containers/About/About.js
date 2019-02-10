@@ -1,18 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class About extends Component {
-    render() {
-        return (
-            <>
-                <section id="section-02" className="section-about">
-                    <h1>About</h1>
-                </section>
-                <div className='section-about__image'>a</div>
-                
-            </>
+import image from '../../styles/assets/images/backgr-about.jpg';
 
-        );
-    }
+const About = () => {
+    return (
+        <>
+            <section id="section-02" className="section-about">
+                <h1>About</h1>
+                <img className="section-about__image" src={image} />
+            </section>
+        </>
+
+    );
 }
 
 export default About;
