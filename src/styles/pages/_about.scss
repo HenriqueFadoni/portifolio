@@ -2,6 +2,17 @@
     width: auto;
     height: 100vh;
     background-color: #f7f7f7;
+    z-index: 2;
 
     clip-path: polygon(80% 0,0 0, 0 100%, 70% 100%)
+}
+
+.section-about__image {
+    background-image: url('./assets/images/backgr-about.jpg');
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    top:100vh;
+    clip-path: polygon(80% 0, 100%  0, 100% 100%, 70% 100%)
 }

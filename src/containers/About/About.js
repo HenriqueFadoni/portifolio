@@ -7,6 +7,8 @@ class About extends Component {
                 <section id="section-02" className="section-about">
                     <h1>About</h1>
                 </section>
+                <div className='section-about__image'>a</div>
+                
             </>
 
         );

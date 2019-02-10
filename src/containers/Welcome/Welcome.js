@@ -23,7 +23,7 @@ class Welcome extends Component {
         }
 
         return (
-            <section className="section-welcome">
+            <section id="section-01" className="section-welcome">
                 <HumburgerMenu
                     classMenu={menu}
                     menuChange={this.menuHandler} />
