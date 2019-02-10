@@ -63,3 +63,14 @@
         top: 70vh;
     }
 }
+
+// == NAVBAR ==
+
+@keyframes navbarStick {
+    0% {
+        top: -10vh;
+    }
+    100% {
+        top: 0;
+    }
+}

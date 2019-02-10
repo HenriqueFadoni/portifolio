@@ -6,15 +6,15 @@
 
         &__sticky {
             position: fixed;
-            top: 0;
+            top: -10vh;
             width: 100%;
             z-index: 10;
+            animation: navbarStick 1s;
+            animation-fill-mode: forwards;
 
             & + .section-about{
                 margin-top: 7vh;
             }
-
-            
         }
 
     }
