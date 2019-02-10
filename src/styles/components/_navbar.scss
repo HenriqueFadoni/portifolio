@@ -3,6 +3,13 @@
         background-color: $color-primary-dark;
         border-bottom: 3px solid $color-secondary;
         color: $color-secondary;
+
+        &__sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
     }
 
     &__nav {

@@ -12,7 +12,7 @@ class App extends Component {
         <Welcome />
         <Menu />
         <About />
-        <section className="portifolio"></section>
+        <section id="portifolio" className="portifolio"></section>
       </>
     );
   }
