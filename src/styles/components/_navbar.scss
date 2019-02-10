@@ -1,0 +1,25 @@
+.navbar {
+    &__container {
+        background-color: $color-primary-dark;
+        border-bottom: 3px solid $color-secondary;
+        color: $color-secondary;
+    }
+
+    &__nav {
+        & ul {
+            justify-content: flex-start;
+            list-style-type: none;
+            display: flex;
+        }
+
+        & li {
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+
+            &:hover {
+                background-color: $color-primary;
+            }
+        }
+    }
+}
