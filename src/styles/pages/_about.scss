@@ -10,3 +10,15 @@
     }
 }
 
+.about {
+    &__headline_line {
+        width: 10vw;
+        background-color: black;
+        height: 4px;
+        position: absolute;
+        transform: translate(-50%,-50%);
+
+        top: 120vh;
+        left: 50%;
+    }
+}

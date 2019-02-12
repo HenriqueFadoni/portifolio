@@ -35,4 +35,21 @@ body {
     font-weight: 200;
 }
 
-// == 
+// == ABOUT ==
+
+.about {
+    & h1 {
+        font-weight: 200;
+        font-size: 4rem;
+    }
+
+    &__headline {
+        position: absolute;
+        font-size: 5rem;
+        font-weight: 300;
+        transform: translate(-50%,-50%);
+        color: $color-secondary-dark;
+        left: 50%;
+        top: 115vh;
+    }
+}
