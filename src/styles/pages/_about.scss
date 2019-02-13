@@ -1,16 +1,23 @@
 .section-about {
     width: auto;
-    height: 140vh;
-    background-color: #f7f7f7;
+    height: 120vh;
+    background-color: $color-white;
 
     &__image {
         height: auto;
         width: 25vw;
         clip-path: circle(50% at 50% 50%);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 .about {
+    h2 {
+        font-weight: 300;
+    }
+
     &__headline_line {
         width: 10vw;
         background-color: black;
@@ -24,13 +31,19 @@
 
     &__icon {
         text-align: center;
-        color: white;
+        color: $color-white;
         background-color: $color-secondary;
-        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-
+        clip-path: circle(61.7% at 50% 50%);
         ion-icon {
-            font-size: 4vw;
+            font-size: 5vw;
+        }
+    }
+
+    &__text {
+        margin-top: 10vh;
+        
+        span {
+            color: $color-secondary;
         }
     }
 }
-// 
