@@ -3,6 +3,7 @@
     height: 100vh;
     background-color: $color-primary;
     color: $color-white;
+    overflow: hidden;
 
     & h1 {
         font-weight: 200;

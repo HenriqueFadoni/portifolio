@@ -48,9 +48,11 @@
         position: relative;
         display: grid;
         grid-column-gap: 5vw;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: 18.75vw 18.75vw 18.75vw 18.75vw;
+        color: black;
+        font-size: 1rem;
 
-        top: 20vh;
+        top: 30vh;
         padding: 5vw;
     
         &__1-of-4 {
