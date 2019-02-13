@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Welcome from './containers/Welcome/Welcome';
 import About from './containers/About/About';
 import Menu from './containers/Menu/Menu';
+import Portifolio from './containers/Portifolio/Portifolio';
 import './styles/main.scss';
 
 class App extends Component {
@@ -12,7 +13,8 @@ class App extends Component {
         <Welcome />
         <Menu />
         <About />
-        <section id="portifolio" className="portifolio"></section>
+        <Portifolio />
+        <section id='contact' className='contact'></section>
       </>
     );
   }

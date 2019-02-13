@@ -15,7 +15,8 @@ const AboutSkill = () => (
             <h3>JEST</h3>
             <h3>HTML</h3>
             <h3>CSS3</h3>
-            <h3>Firebase</h3>
+            <h3>Firebase</h3> 
+            {/* can be nested later */}
 
             <h1 className='about__text'>Let's Make Something <span>Awesome</span>!</h1>
             <h2>

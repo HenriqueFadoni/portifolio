@@ -43,5 +43,21 @@
             }
         }
     }
+
+    &-row-portifolio {
+        position: relative;
+        display: grid;
+        grid-column-gap: 5vw;
+        grid-template-columns: auto auto auto auto;
+
+        top: 20vh;
+        padding: 5vw;
+    
+        &__1-of-4 {
+            height: 20vh;
+            width: auto;
+            background-color: white;
+        }
+    }
 }
 

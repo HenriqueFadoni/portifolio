@@ -63,7 +63,7 @@ class Menu extends Component {
                         <li className={this.state.isHome ? 'active' : ''}><a href='#home'>Home</a></li>
                         <li className={this.state.isAbout ? 'active' : ''}><a href='#about'>About</a></li>
                         <li className={this.state.isPortifolio ? 'active' : ''}><a href='#portifolio'>Portifolio</a></li>
-                        <li className={this.state.isContact ? 'active' : ''}><a href='/'>Contact</a></li>
+                        <li className={this.state.isContact ? 'active' : ''}><a href='#contact'>Contact</a></li>
                     </ul>
                 </nav>
             </div>

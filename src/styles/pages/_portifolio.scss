@@ -1,5 +1,20 @@
 .portifolio {
     width: auto;
     height: 100vh;
-    background-color: blue;
+    background-color: $color-primary;
+    color: $color-white;
+
+    & h1 {
+        font-weight: 200;
+        font-size: 4rem;
+    }
+
+    &__headline {
+        position: absolute;
+        font-size: 5rem;
+        font-weight: 300;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 240vh;
+    }
 }
