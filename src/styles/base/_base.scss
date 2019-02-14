@@ -22,6 +22,10 @@ ion-icon {
     transition: 1s;
 }
 
+button {
+    cursor: pointer;
+}
+
 a {
     &,
     &:hover,
