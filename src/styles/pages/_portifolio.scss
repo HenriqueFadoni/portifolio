@@ -21,14 +21,51 @@
 
     
 }
-[class*="item"] {
-    text-align: center;
-    padding: 25px;
 
-    h2 { margin-bottom: 10px; }
-    h3 { margin-bottom: 25px; }
+.item {
+    &-mychatexample { background-color: blue; }
+
+    &-burgerbuilder { background-color: yellow; }
+
+    &-wishlist { background-color: grey; }
+
+    &-forkifywebsite { background-color: red; }
 }
 
-.btn-portifolio {
-    color: green;
+[class*="item"] {
+    color: $color-secondary;
+    box-shadow: 10px 5px 8px $color-primary-dark;
+    overflow: hidden;
+    text-align: center;
+    padding: 25px;
+    
+    .btn-portifolio {
+        color: $color-secondary;
+        font-size: 1.2rem;
+        padding: 1vw;
+        border: 3px solid $color-secondary;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    & {
+        .btn-portifolio { opacity: 0; }
+        h2 { 
+            opacity: 0; 
+            margin-bottom: 10px; 
+        }
+        h3 { 
+            opacity: 0; 
+            margin-bottom: 25px; 
+        }
+    }
+    
+    &:hover {
+        background-color: white;
+
+        .btn-portifolio { opacity: 1; }
+
+        h2 { opacity: 1; }
+        h3 { opacity: 1; }
+    }
 }
