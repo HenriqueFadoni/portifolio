@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import PortifolioItem from '../../components/PortifolioItem/PortifolioItem';
+import myChatExample from '../../styles/assets/images/mychatexample.png';
 
 class Portifolio extends Component {
     state = {
@@ -8,22 +9,26 @@ class Portifolio extends Component {
             {
                 name: 'My Chat Example',
                 class: 'mychatexample',
-                description: 'React.JS + Chatkit'
+                description: 'React.JS + Chatkit',
+                image: myChatExample
             },
             {
                 name: 'Burger Builder',
                 class: 'burgerbuilder',
-                description: 'React.JS + Redux + Firebase'
+                description: 'React.JS + Redux + Firebase',
+                image: ''
             },
             {
                 name: 'WishList',
                 class: 'wishlist',
-                description: 'React.JS + Redux'
+                description: 'React.JS + Redux',
+                image: ''
             },
             {
                 name: 'Forkify Website',
                 class: 'forkifywebsite',
-                description: 'JS ES6 + Webpack'
+                description: 'JS ES6 + Webpack',
+                image: ''
             }
         ]
     }
@@ -36,7 +41,8 @@ class Portifolio extends Component {
                     key={index}
                     classN={items.class} 
                     title={items.name}
-                    description={items.description}/>
+                    description={items.description}
+                    url={items.image}/>
             );
         });
 

@@ -19,64 +19,51 @@
         top: 240vh;
     }
 
-    
-}
-
-.item {
-    &-mychatexample { background-color: blue; }
-
-    &-burgerbuilder { background-color: yellow; }
-
-    &-wishlist { background-color: grey; }
-
-    &-forkifywebsite { background-color: red; }
 }
 
 [class*="item"] {
     color: $color-secondary;
-    box-shadow: 10px 5px 8px $color-primary-dark;
+    box-shadow: 10px 5px 1px $color-primary-dark;
+    transition: .3s;
     overflow: hidden;
     text-align: center;
     padding: 25px;
     
     .btn-portifolio {
-        color: $color-secondary;
-        font-size: 1.2rem;
-        padding: 1vw;
-        border: 3px solid $color-secondary;
-        text-decoration: none;
-        display: inline-block;
+        &,
+        &:visited {
+            color: $color-secondary;
+            font-size: 1.2rem;
+            padding: 1vw;
+            border: 3px solid $color-secondary;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        &:hover {
+            background-color: $color-secondary;
+            color: $color-white;
+        }
+
+        &:active {
+            border: none;
+        }
     }
 
     & {
-        &,
-        .btn-portifolio,
-        h2,
-        h3 {
-            transition: .5s;
-        }
+        background-color: white;
 
-        .btn-portifolio { 
-            opacity: 0;
-        }
-        h2 { 
-            opacity: 0; 
-            margin-bottom: 10px; 
-        }
-        h3 { 
-            opacity: 0; 
+        h2 { margin-bottom: 10px; }
+
+        h3 {
             margin-bottom: 15px; 
             font-size: 1.4rem;
             font-weight: 200;
         }
     }
-    
+
     &:hover {
-        background-color: white;
-
-        .btn-portifolio { opacity: 1; }
-
-        h2 { opacity: 1; }
-        h3 { opacity: 1; }
+        box-shadow: none;
+        transform: scale(1.1);
     }
 }
