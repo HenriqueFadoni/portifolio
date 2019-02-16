@@ -1,11 +1,13 @@
 import React from 'react';
 
 const ModalContent = () => (
-    <div>
+    <div className="modal__container__content">
         <h1>Title</h1>
-        <p>Content</p>
-        <a href="/" />
-        <a href="/" />
+        <div className="modal__container__content__text">
+            <p>Content</p>
+        </div>
+        <a href="/"> GO TO WEBSITE</a>
+        <a href="/">GitHub</a>
     </div>
 );
 

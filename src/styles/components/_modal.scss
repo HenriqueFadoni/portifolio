@@ -4,13 +4,26 @@
         position: fixed;
         z-index:500;
         background-color: white;
-        width: 70%;
+        width: 50%;
         border: 1px solid #ccc;
         padding: 16px;
-        left: 15%;
-        top: 30%;
+        left: 25%;
+        top: 20%;
+        transform: translate(-50%, -50%);
         box-sizing: border-box;
         transition: all .3s ease-out;
+        height: 70vh;
+
+        &__content {
+            a {
+                display: inline-block;
+            }
+            &__text {
+                margin: 4vw;
+                height: 60%;
+                overflow: scroll;
+            }
+        }
     }
 
     &__backdrop {

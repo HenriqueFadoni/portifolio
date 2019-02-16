@@ -64,3 +64,17 @@ body {
         top: 115vh;
     }
 }
+
+// == MODAL == 
+
+.modal {
+    &__container {
+        &__content {
+            display: inline;
+            h1 {  
+                text-align: center;
+                margin-top: 2vh;
+            }
+        }
+    }
+}
