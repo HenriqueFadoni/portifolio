@@ -7,7 +7,9 @@ const PortifolioItem = props => {
                 <div className='portifolio__info'>
                     <h2>{props.title}</h2>
                     <h3>{props.description}</h3>
-                    <button className='btn-portifolio'>LEARN MORE</button>
+                    <button 
+                        className='btn-portifolio'
+                        onClick={props.clicked}>LEARN MORE</button>
                 </div>
             </div>
         </>

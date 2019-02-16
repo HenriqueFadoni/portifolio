@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
+import Modal from '../../components/PortifolioModal/Modal';
 import PortifolioItem from '../../components/PortifolioItem/PortifolioItem';
-import myChatExample from '../../styles/assets/images/mychatexample.png';
 
 class Portifolio extends Component {
     state = {
@@ -10,7 +10,6 @@ class Portifolio extends Component {
                 name: 'My Chat Example',
                 class: 'mychatexample',
                 description: 'React.JS + Chatkit',
-                image: myChatExample
             },
             {
                 name: 'Burger Builder',
@@ -22,16 +21,17 @@ class Portifolio extends Component {
                 name: 'WishList',
                 class: 'wishlist',
                 description: 'React.JS + Redux',
-                image: ''
             },
             {
                 name: 'Forkify Website',
                 class: 'forkifywebsite',
                 description: 'JS ES6 + Webpack',
-                image: ''
             }
-        ]
+        ],
+        isModalActive: false
     }
+
+    modalHandler = () => this.setState({ isModalActive: true });
 
     render() {
         const x = this.state.portifolio;
@@ -39,22 +39,28 @@ class Portifolio extends Component {
             return (
                 <PortifolioItem
                     key={index}
-                    classN={items.class} 
+                    classN={items.class}
                     title={items.name}
                     description={items.description}
-                    url={items.image}/>
+                    clicked={this.modalHandler}
+                />
             );
         });
 
         return (
-            <section id="portifolio" className="portifolio">
-                <div>
-                    <h1 className='portifolio__headline'>Portifolio</h1>
-                </div>
-                <div className='grid-row-portifolio'>
-                    {displayPortifolio}
-                </div>
-            </section>
+            <>
+                <section id="portifolio" className="portifolio">
+                    <Modal
+                        show={this.state.isModalActive} />
+                    <div>
+                        <h1 className='portifolio__headline'>Portifolio</h1>
+                        <div className='portifolio__headline_line'></div>
+                    </div>
+                    <div className='grid-row-portifolio'>
+                        {displayPortifolio}
+                    </div>
+                </section>
+            </>
         );
     }
 }

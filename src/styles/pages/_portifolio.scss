@@ -17,8 +17,18 @@
         transform: translate(-50%,-50%);
         left: 50%;
         top: 240vh;
-    }
 
+        &_line {
+            width: 10vw;
+            background-color: $color-secondary;
+            height: 4px;
+            position: absolute;
+            transform: translate(-50%,-50%);
+
+            top: 245vh;
+            left: 50%;
+        }
+    }
 }
 
 [class*="item"] {
