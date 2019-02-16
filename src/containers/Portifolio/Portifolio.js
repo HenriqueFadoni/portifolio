@@ -31,7 +31,10 @@ class Portifolio extends Component {
         isModalActive: false
     }
 
-    modalHandler = () => this.setState({ isModalActive: true });
+    modalHandler = () => {
+        const newModalStatus = ! this.state.isModalActive;
+        this.setState({ isModalActive: newModalStatus });
+    };
 
     render() {
         const x = this.state.portifolio;
@@ -51,7 +54,8 @@ class Portifolio extends Component {
             <>
                 <section id="portifolio" className="portifolio">
                     <Modal
-                        show={this.state.isModalActive} />
+                        show={this.state.isModalActive} 
+                        backdropClick={this.modalHandler}/>
                     <div>
                         <h1 className='portifolio__headline'>Portifolio</h1>
                         <div className='portifolio__headline_line'></div>

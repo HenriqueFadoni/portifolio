@@ -8,7 +8,9 @@ class Modal extends Component {
     render() {
         return (
             <>
-                <Backdrop show={this.props.show} />
+                <Backdrop 
+                    show={this.props.show}
+                    clicked={this.props.backdropClick}/>
                 <div
                     className='modal__container'
                     style={{
