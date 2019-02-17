@@ -14,8 +14,7 @@ class Portifolio extends Component {
             {
                 name: 'Burger Builder',
                 class: 'burgerbuilder',
-                description: 'React.JS + Redux + Firebase',
-                image: ''
+                description: 'React.JS + Redux + Firebase'
             },
             {
                 name: 'WishList',
@@ -28,12 +27,17 @@ class Portifolio extends Component {
                 description: 'JS ES6 + Webpack',
             }
         ],
-        isModalActive: false
+        isModalActive: false,
+        portifolioItem: ''
     }
 
-    modalHandler = () => {
+    modalHandler = event => {
+        const element = event.target.parentNode.parentNode.className.split('-');
         const newModalStatus = ! this.state.isModalActive;
-        this.setState({ isModalActive: newModalStatus });
+        this.setState({ 
+            isModalActive: newModalStatus,
+            portifolioItem: element[5]
+        });
     };
 
     render() {
@@ -45,7 +49,7 @@ class Portifolio extends Component {
                     classN={items.class}
                     title={items.name}
                     description={items.description}
-                    clicked={this.modalHandler}
+                    clicked={event => this.modalHandler(event)}
                 />
             );
         });
@@ -54,6 +58,8 @@ class Portifolio extends Component {
             <>
                 <section id="portifolio" className="portifolio">
                     <Modal
+                        item={this.state.portifolioItem}
+                        items={this.state.portifolio}
                         show={this.state.isModalActive} 
                         backdropClick={this.modalHandler}/>
                     <div>
