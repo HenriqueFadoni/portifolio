@@ -73,7 +73,19 @@ body {
             display: inline;
             h1 {  
                 text-align: center;
-                margin-top: 2vh;
+                padding: 2vh 0;
+                color: $color-white;
+                background-color: $color-secondary;
+            }
+            &__text {
+                font-size: 1.5rem;
+                p {
+                    text-align: justify;
+                }
+                h2 {
+                    color: $color-secondary;
+                    margin: 4px 0;
+                }
             }
         }
     }
