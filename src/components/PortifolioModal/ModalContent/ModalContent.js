@@ -16,12 +16,17 @@ const ModalContent = props => {
                     ))}
                 </ul>
             </div>
-            <button><a href="/">GO TO WEBSITE</a></button>
-            <button>
-                <a 
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    href={`https://github.com/HenriqueFadoni/${props.data.urlGitHub}`}>GitHub</a></button>
+            <div className="modal__container__buttons">
+                <button className='btn-portifolio' href='/'>
+                    <a href="/">Website</a>
+                </button>
+                <button className='btn-portifolio'>
+                    <a
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        href={`https://github.com/HenriqueFadoni/${props.data.urlGitHub}`}>GitHub</a>
+                </button>
+            </div>
         </div>
     );
 };
