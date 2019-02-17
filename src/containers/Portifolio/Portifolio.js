@@ -10,21 +10,25 @@ class Portifolio extends Component {
                 name: 'My Chat Example',
                 class: 'mychatexample',
                 description: 'React.JS + Chatkit',
+                summary: ''
             },
             {
                 name: 'Burger Builder',
                 class: 'burgerbuilder',
-                description: 'React.JS + Redux + Firebase'
+                description: 'React.JS + Redux + Firebase',
+                summary: ''
             },
             {
                 name: 'WishList',
                 class: 'wishlist',
                 description: 'React.JS + Redux',
+                summary: ''
             },
             {
                 name: 'Forkify Website',
                 class: 'forkifywebsite',
                 description: 'JS ES6 + Webpack',
+                summary: ''
             }
         ],
         isModalActive: false,
