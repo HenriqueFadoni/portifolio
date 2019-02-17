@@ -16,8 +16,12 @@ const ModalContent = props => {
                     ))}
                 </ul>
             </div>
-            <a href="/"> GO TO WEBSITE</a>
-            <a href="/">GitHub</a>
+            <button><a href="/">GO TO WEBSITE</a></button>
+            <button>
+                <a 
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    href={`https://github.com/HenriqueFadoni/${props.data.urlGitHub}`}>GitHub</a></button>
         </div>
     );
 };

@@ -11,6 +11,7 @@ class Portifolio extends Component {
                 class: 'mychatexample',
                 description: 'React.JS + Chatkit',
                 technologies: ['Javascript ES6', 'React', 'ChatKit', 'CSS3'],
+                urlGitHub:'my-chat-example',
                 summary: `My Chat Example is a simple chat application where 
                 users can interact with each other in a Global Chat. Users can create 
                 and join different Chat rooms.`
@@ -20,6 +21,7 @@ class Portifolio extends Component {
                 class: 'burgerbuilder',
                 description: 'React.JS + Redux + Firebase',
                 technologies: ['Javascript ES6', 'React', 'Redux', 'CSS3', 'Firebase', 'Enzyme'],
+                urlGitHub:'the-burguer-builder',
                 summary: `Burger Builder is an Application that let users build their own burger
                 and order it from a fictional store without any delay. The user may Log In or
                 Subscribe in order to see its own orders.`
@@ -29,6 +31,7 @@ class Portifolio extends Component {
                 class: 'wishlist',
                 description: 'React.JS + Redux',
                 technologies: ['Javascript ES6', 'React', 'Redux', 'CSS3', 'SASS/SCSS', 'Firebase'],
+                urlGitHub:'WishList',
                 summary: ''
             },
             {
@@ -36,6 +39,7 @@ class Portifolio extends Component {
                 class: 'forkifywebsite',
                 description: 'JS ES6 + Webpack',
                 technologies: ['Javascript ES6', 'Webpack', 'External API', 'CSS3'],
+                urlGitHub: 'Forkify-Website',
                 summary: ''
             }
         ],
