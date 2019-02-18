@@ -48,6 +48,7 @@
             border: 3px solid $color-secondary;
             text-decoration: none;
             display: inline-block;
+            transition: all .3s;
         }
 
         &:hover {

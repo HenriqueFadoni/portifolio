@@ -32,15 +32,18 @@ class Portifolio extends Component {
                 description: 'React.JS + Redux',
                 technologies: ['Javascript ES6', 'React', 'Redux', 'CSS3', 'SASS/SCSS', 'Firebase'],
                 urlGitHub:'WishList',
-                summary: ''
+                summary: `WishList is a Website where users can register their own wishes online. 
+                Nonetheless, the user may register in the platform in order to post/delete wishes.`
             },
             {
                 name: 'Forkify Website',
                 class: 'forkifywebsite',
                 description: 'JS ES6 + Webpack',
-                technologies: ['Javascript ES6', 'Webpack', 'External API', 'CSS3'],
+                technologies: ['Javascript ES6', 'Webpack', 'Babel', 'External API', 'HTML5', 'CSS3'],
                 urlGitHub: 'Forkify-Website',
-                summary: ''
+                summary: `Forkify is a Web Application where users can search for their favorite food recipe, and favorite them. 
+                Additionally, the user can generate a shopping list that is adjustable to the number of people that it might be
+                served.`
             }
         ],
         isModalActive: false,
@@ -82,6 +85,10 @@ class Portifolio extends Component {
                         <h1 className='portifolio__headline'>Portifolio</h1>
                         <div className='portifolio__headline_line'></div>
                     </div>
+                    <p>
+                        Here you can find some of my works! Don't worry, you access their unique Websites as well as their Git repository. 
+                        Make yourself home!
+                    </p>
                     <div className='grid-row-portifolio'>
                         {displayPortifolio}
                     </div>
