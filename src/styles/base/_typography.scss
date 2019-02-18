@@ -64,6 +64,17 @@ body {
         top: 115vh;
     }
 }
+// == Portifolio ==
+
+.portifolio {
+    &__paragraph {
+        font-weight: 200;
+        font-size: 1.5rem;
+        position: relative;
+        top: 30vh;
+        text-align: center;
+    }
+}
 
 // == MODAL == 
 

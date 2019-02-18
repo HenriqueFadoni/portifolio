@@ -1,7 +1,9 @@
 .portifolio {
     width: auto;
     height: 100vh;
-    background-color: $color-primary;
+    background-image: 
+        linear-gradient(rgba($color-primary, 0.9), rgba($color-primary, 0.9)), 
+        url('./assets/images/backgr-portifolio.jpg');
     color: $color-white;
     overflow: hidden;
 

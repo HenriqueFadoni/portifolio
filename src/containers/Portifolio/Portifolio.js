@@ -10,7 +10,7 @@ class Portifolio extends Component {
                 name: 'My Chat Example',
                 class: 'mychatexample',
                 description: 'React.JS + Chatkit',
-                technologies: ['Javascript ES6', 'React', 'ChatKit', 'CSS3'],
+                technologies: ['Javascript ES6', 'React', 'ChatKit', 'HTML5/CSS3'],
                 urlGitHub:'my-chat-example',
                 summary: `My Chat Example is a simple chat application where 
                 users can interact with each other in a Global Chat. Users can create 
@@ -20,7 +20,7 @@ class Portifolio extends Component {
                 name: 'Burger Builder',
                 class: 'burgerbuilder',
                 description: 'React.JS + Redux + Firebase',
-                technologies: ['Javascript ES6', 'React', 'Redux', 'CSS3', 'Firebase', 'Enzyme'],
+                technologies: ['Javascript ES6', 'React', 'Redux', 'HTML5/CSS3', 'Firebase', 'Enzyme'],
                 urlGitHub:'the-burguer-builder',
                 summary: `Burger Builder is an Application that let users build their own burger
                 and order it from a fictional store without any delay. The user may Log In or
@@ -30,7 +30,7 @@ class Portifolio extends Component {
                 name: 'WishList',
                 class: 'wishlist',
                 description: 'React.JS + Redux',
-                technologies: ['Javascript ES6', 'React', 'Redux', 'CSS3', 'SASS/SCSS', 'Firebase'],
+                technologies: ['Javascript ES6', 'React', 'Redux', 'HTML5/CSS3', 'SASS/SCSS', 'Firebase'],
                 urlGitHub:'WishList',
                 summary: `WishList is a Website where users can register their own wishes online. 
                 Nonetheless, the user may register in the platform in order to post/delete wishes.`
@@ -39,7 +39,7 @@ class Portifolio extends Component {
                 name: 'Forkify Website',
                 class: 'forkifywebsite',
                 description: 'JS ES6 + Webpack',
-                technologies: ['Javascript ES6', 'Webpack', 'Babel', 'External API', 'HTML5', 'CSS3'],
+                technologies: ['Javascript ES6', 'Webpack', 'Babel', 'External API', 'HTML5/CSS3'],
                 urlGitHub: 'Forkify-Website',
                 summary: `Forkify is a Web Application where users can search for their favorite food recipe, and favorite them. 
                 Additionally, the user can generate a shopping list that is adjustable to the number of people that it might be
@@ -75,7 +75,7 @@ class Portifolio extends Component {
 
         return (
             <>
-                <section id="portifolio" className="portifolio">
+                <section id='portifolio' className='portifolio'>
                     <Modal
                         item={this.state.portifolioItem}
                         items={this.state.portifolio}
@@ -85,9 +85,9 @@ class Portifolio extends Component {
                         <h1 className='portifolio__headline'>Portifolio</h1>
                         <div className='portifolio__headline_line'></div>
                     </div>
-                    <p>
-                        Here you can find some of my works! Don't worry, you access their unique Websites as well as their Git repository. 
-                        Make yourself home!
+                    <p className='portifolio__paragraph'>
+                        Here you can find some of my Projects! Don't worry, you can access their unique Websites as well as their Git repository. 
+                        Make yourself at home!
                     </p>
                     <div className='grid-row-portifolio'>
                         {displayPortifolio}

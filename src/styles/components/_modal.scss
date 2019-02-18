@@ -7,11 +7,15 @@
         width: 50%;
         border: 1px solid #ccc;
         left: 25%;
-        top: 20%;
+        top: 140%;
         transform: translate(-50%, -50%);
         box-sizing: border-box;
         height: 70vh;
         overflow: hidden;
+        animation-name: showModal;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
 
         &__content {
             overflow: scroll;
@@ -22,8 +26,8 @@
                 margin: 4vw;
                 height: 35vh;
                 overflow: scroll;
-
             }
+            
         }
 
         &__buttons {
@@ -63,5 +67,41 @@
         left: 0;
         top: 0;
         background-color: rgba( 0, 0, 0, .7);
+        transition: all .5s;
+        animation: showBackDrop 1s;
+
+        ion-icon {
+            cursor: pointer;
+            transition: all 2s;
+            font-size: 4rem;
+            position: absolute;
+            right: 0;
+
+            &:hover {
+                color: $color-secondary-dark;
+                transition: all .2s;
+            }
+
+            &:active {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+@keyframes showModal {
+    0%{
+        top: 140%;
+    }
+    100%{
+        top: 20%;
+    }
+}
+@keyframes showBackDrop {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
