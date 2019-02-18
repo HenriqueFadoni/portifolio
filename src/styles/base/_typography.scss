@@ -113,12 +113,45 @@ body {
 // == PORTIFOLIO ==
 
 .portifolio {
+    color: $color-white;
+
+    & h1 {
+        font-weight: 200;
+        font-size: 4rem;
+    }
+
     &__paragraph {
         font-weight: 200;
         font-size: 1.5rem;
-        position: relative;
-        top: 30vh;
+        
         text-align: center;
+    }
+
+    &__headline {
+        font-size: 5rem;
+        font-weight: 300;
+    }
+}
+
+[class*="item"] {
+    text-align: center;
+
+    h3 {
+        font-size: 1.4rem;
+        font-weight: 200;
+    }
+
+    .btn-portifolio {
+        &,
+        &:visited {
+            color: $color-secondary;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+
+        &:hover {
+            color: $color-white;
+        }
     }
 }
 

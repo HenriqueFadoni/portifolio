@@ -41,3 +41,17 @@
         }
     }
 }
+
+.btn-portifolio {
+    &,
+    &:visited {
+        padding: 1vw;
+        border: 3px solid $color-secondary;
+        display: inline-block;
+        transition: all .3s;
+    }
+
+    &:hover { background-color: $color-secondary }
+
+    &:active { border: none }
+}
