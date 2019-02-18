@@ -74,3 +74,22 @@
         top: 0;
     }
 }
+
+// == MODAL ==
+
+@keyframes showModal {
+    0%{
+        top: 140%;
+    }
+    100%{
+        top: 20%;
+    }
+}
+@keyframes showBackDrop {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,43 @@
+.welcome-scroll-btn {
+    opacity: 0;
+    position: absolute;
+    animation: scrollBtnAppear 1s, scrollBtn 1s infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+.modal {
+    &__backdrop {
+        ion-icon {
+            cursor: pointer;
+            transition: all 2s;
+            position: absolute;
+
+            &:hover {
+                color: $color-secondary-dark;
+                transition: all .2s;
+            }
+
+            &:active {
+                opacity: 0;
+            }
+        }
+    }
+
+    &__container__buttons {
+        width: 100%;
+        height: 5vh;
+        padding: 0 3vh;
+        
+        .btn-portifolio {
+            border: none;
+            background-color: $color-secondary;
+            border-radius: 20px;
+            padding: 10px;
+            margin-right: 20px;
+            transition: .3s;
+
+            &:hover { background-color: $color-secondary-dark }
+        }
+    }
+}

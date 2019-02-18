@@ -24,9 +24,7 @@ body {
     animation: welcomeAppear1 2s;
 }
 
-.name-color {
-    color: $color-secondary;
-}
+.name-color { color: $color-secondary }
 
 // == NAVBAR ==
 
@@ -47,7 +45,7 @@ body {
         font-weight: 400;
         font-size: 2rem;
         display: inline-block;
-        color: white;
+        color: $color-white;
         background-color: $color-secondary;
         border-radius: 10%;
         padding: 6px;
@@ -64,7 +62,44 @@ body {
         top: 115vh;
     }
 }
-// == Portifolio ==
+
+// == NAVBAR ==
+
+.navbar {
+    &__container { color: $color-secondary }
+    &__nav li { text-decoration: none }
+}
+.active { color: $color-white }
+
+// == ABOUT ==
+
+.grid {
+    &-1-of-3 {
+        text-align: center;
+
+        &__text {
+            color: $color-primary;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    }
+
+    &-1-of-2 {
+        h1 { font-size: 3rem }
+
+        &__text {
+            color: $color-primary;
+            font-size: 1.2rem;
+        }
+    }
+
+    &-row-portifolio {
+        color: black;
+        font-size: 1rem;
+    }
+}
+
+// == PORTIFOLIO ==
 
 .portifolio {
     &__paragraph {
@@ -79,7 +114,11 @@ body {
 // == MODAL == 
 
 .modal {
+    &__backdrop { font-size: 4rem }
+
     &__container {
+        color: black;
+
         &__content {
             display: inline;
             h1 {  
@@ -90,13 +129,20 @@ body {
             }
             &__text {
                 font-size: 1.5rem;
-                p {
-                    text-align: justify;
-                }
+                p { text-align: justify }
                 h2 {
                     color: $color-secondary;
                     margin: 4px 0;
                 }
+            }
+        }
+
+        &__buttons {
+            .btn-portifolio {
+                font-size: 2rem;
+                font-weight: 100;
+                color: $color-white;
+                a:hover { color: $color-white }
             }
         }
     }

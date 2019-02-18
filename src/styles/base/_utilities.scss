@@ -1,4 +1,30 @@
 .welcome-scroll-btn {
     top: 70vh;
     left: 50vw;
+    transform: translate(-50%,-50%);
+}
+
+.modal {
+    &__backdrop { right: 0 }
+    
+    &__container__buttons {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.large-icons-container { 
+    top: 82vh;
+    left: 0;
+}
+
+.hamburger-menu-container { right: 1% }
+
+.grid {
+    &-row { 
+        top: 20vh;
+
+        &-content { top: 20vh }
+        &-portifolio { top: 30vh }
+    }
 }
