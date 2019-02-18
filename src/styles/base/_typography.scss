@@ -1,10 +1,15 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    color: black;
+    color: $color-black;
 }
 
 // == WELCOME ==
+
+.section-welcome {
+    font-size: 3rem;
+    color: $color-white;
+}
 
 .welcome-text-container {
     position: absolute;
@@ -72,6 +77,12 @@ body {
 .active { color: $color-white }
 
 // == ABOUT ==
+.about {
+    h2 { font-weight: 300 }
+    &__text {
+        span { color: $color-secondary }
+    }
+}
 
 .grid {
     &-1-of-3 {
@@ -94,7 +105,7 @@ body {
     }
 
     &-row-portifolio {
-        color: black;
+        color: $color-black;
         font-size: 1rem;
     }
 }
@@ -114,10 +125,10 @@ body {
 // == MODAL == 
 
 .modal {
-    &__backdrop { font-size: 4rem }
+    &__backdrop { ion-icon {font-size: 4rem} }
 
     &__container {
-        color: black;
+        color: $color-black;
 
         &__content {
             display: inline;

@@ -1,12 +1,10 @@
 .section-welcome {
     background-image: 
         linear-gradient(rgba($color-primary, 0.9), rgba($color-primary, 0.9)), 
-        url('./assets/images/backgr-welcome.jpg');
+        url($welcome-backgr);
     position: relative;
     top: 0;
-    height: 100vh;
+    height: $section-welcome-height;
     width: auto;
-    font-size: 3rem;
-    color: white;
     overflow: hidden;
 }

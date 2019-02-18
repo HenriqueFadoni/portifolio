@@ -1,7 +1,19 @@
 // COLORS
 
 $color-white: rgb(255, 255, 255);
+$color-black: rgb(0, 0, 0);
 $color-primary: #282c34;
 $color-primary-dark: #212122;
 $color-secondary: #00BFFF;
 $color-secondary-dark: rgb(15, 131, 170);
+
+// SECTION HEIGHTS
+
+$section-welcome-height: 100vh;
+$section-about-height: 120vh;
+$section-portifolio-height: 100vh;
+
+// IMAGE PATH
+
+$welcome-backgr: './assets/images/backgr-welcome.jpg'; 
+$portifolio-backgr: './assets/images/backgr-portifolio.jpg';

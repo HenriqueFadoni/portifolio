@@ -1,9 +1,9 @@
 .modal__container {
     position: fixed;
     z-index: 500;
-    background-color: white;
+    background-color: $color-white;
     width: 50%;
-    border: 1px solid #ccc;
+    border: 1px solid $color-white;
     left: 25%;
     top: 140%;
     transform: translate(-50%, -50%);

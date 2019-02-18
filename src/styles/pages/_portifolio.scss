@@ -1,9 +1,9 @@
 .portifolio {
     width: auto;
-    height: 100vh;
+    height: $section-portifolio-height;
     background-image: 
         linear-gradient(rgba($color-primary, 0.9), rgba($color-primary, 0.9)), 
-        url('./assets/images/backgr-portifolio.jpg');
+        url($portifolio-backgr);
     color: $color-white;
     overflow: hidden;
 
@@ -13,12 +13,11 @@
     }
 
     &__headline {
-        position: absolute;
+        position: relative;
         font-size: 5rem;
         font-weight: 300;
-        transform: translate(-50%,-50%);
-        left: 50%;
-        top: 240vh;
+        left: 44.5%;
+        top: 10vh;
 
         &_line {
             width: 10vw;
@@ -58,13 +57,11 @@
             color: $color-white;
         }
 
-        &:active {
-            border: none;
-        }
+        &:active { border: none }
     }
 
     & {
-        background-color: white;
+        background-color: $color-white;
 
         h2 { margin-bottom: 10px; }
 

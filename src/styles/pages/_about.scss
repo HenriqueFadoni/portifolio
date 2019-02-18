@@ -1,6 +1,6 @@
 .section-about {
     width: auto;
-    height: 120vh;
+    height: $section-about-height;
     background-color: $color-white;
 
     &__image {
@@ -8,24 +8,18 @@
         width: 25vw;
         clip-path: circle(50% at 50% 50%);
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
     }
 }
 
 .about {
-    h2 {
-        font-weight: 300;
-    }
-
     &__headline_line {
+        background-color: $color-black;
         width: 10vw;
-        background-color: black;
         height: 4px;
-        position: absolute;
+        position: relative;
         transform: translate(-50%,-50%);
-
-        top: 120vh;
+        top: 13vh;
         left: 50%;
     }
 
@@ -34,16 +28,9 @@
         color: $color-white;
         background-color: $color-secondary;
         clip-path: circle(61.7% at 50% 50%);
-        ion-icon {
-            font-size: 5vw;
-        }
+
+        ion-icon { font-size: 5vw }
     }
 
-    &__text {
-        margin-top: 10vh;
-        
-        span {
-            color: $color-secondary;
-        }
-    }
+    &__text { margin-top: 10vh }
 }

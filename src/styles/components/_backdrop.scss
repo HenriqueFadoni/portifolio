@@ -5,7 +5,7 @@
     z-index: 100;
     left: 0;
     top: 0;
-    background-color: rgba( 0, 0, 0, .7);
+    background-color: rgba( $color-black, .7);
     transition: all .5s;
     animation: showBackDrop 1s;
 }
