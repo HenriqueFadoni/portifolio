@@ -64,6 +64,14 @@ class Menu extends Component {
                         <li className={this.state.isAbout ? 'active' : ''}><a href='#about'>About</a></li>
                         <li className={this.state.isPortifolio ? 'active' : ''}><a href='#portifolio'>Portifolio</a></li>
                         <li className={this.state.isContact ? 'active' : ''}><a href='#contact'>Contact</a></li>
+                        <li>
+                            <a 
+                                target="_blank" 
+                                href='https://drive.google.com/file/d/1QDj5qjCMVyWiGUe63Jp9K4I6lXv4A97j/view?usp=sharing' 
+                                rel="noopener noreferrer">
+                                    Resume
+                                </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
