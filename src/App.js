@@ -5,6 +5,7 @@ import About from './containers/About/About';
 import Menu from './containers/Menu/Menu';
 import Portifolio from './containers/Portifolio/Portifolio';
 import Contact from './containers/Contact/Contact';
+import Footer from './containers/Footer/Footer';
 import './styles/main.scss';
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
         <About />
         <Portifolio />
         <Contact />
+        <Footer />
       </>
     );
   }
