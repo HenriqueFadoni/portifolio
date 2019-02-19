@@ -10,6 +10,7 @@ const Contact = () => {
         <section id="contact" className="contact">
             <Header />
             <ProfessionalContact />
+            <div className="vertical-bar"></div>
             <SocialMedia />
             <Address />
             <h1 className="contact__email">

@@ -7,6 +7,7 @@
     width: 100%;
     overflow: hidden;
     
+    h1 { font-weight: 300 }
     ul { list-style-type: none }
 
     &__header-backgr {
@@ -35,12 +36,24 @@
         position: absolute;
         top: 360vh;
         margin-left: 25vw;
+        ul { margin-top: 10% }
+        li { 
+            margin: 5px 0;
+            font-size: 2.2rem;
+            a { 
+                color: $color-secondary;
+                transition: all .3s;
+            }
+            a:hover { color: $color-white }
+        }
     }
 
     &__social-media {
         position: absolute;
         top: 360vh;
         margin-left: 60vw;
+        ion-icon { font-size: 3rem }
+        
     }
 
     &__address {
@@ -56,6 +69,11 @@
         transform: translateX(-50%);
         margin-top: 10vh;
         font-size: 4rem;
+        
+        a { transition: all .3s; }
+        a:hover { 
+            font-size: 3.5rem
+        }
     }
     
 }
