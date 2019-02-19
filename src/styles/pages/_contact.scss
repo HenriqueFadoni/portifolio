@@ -1,8 +1,13 @@
 .contact {
     width: auto;
+    color: $color-white;
     z-index: 1;
     height: $section-contact-height;
     background-color: $color-primary-dark;
+    width: 100%;
+    overflow: hidden;
+    
+    ul { list-style-type: none }
 
     &__header-backgr {
         widows: 100%;
@@ -24,4 +29,33 @@
         left: 50%;
         transform: translate(-50%,-50%);
     }
+
+    font-size: 1.5rem;
+    &__container-professional {
+        position: absolute;
+        top: 360vh;
+        margin-left: 25vw;
+    }
+
+    &__social-media {
+        position: absolute;
+        top: 360vh;
+        margin-left: 60vw;
+    }
+
+    &__address {
+        position: absolute;
+        top: 380vh;
+        margin-left: 60vw;
+    }
+    
+    &__email {
+        position: absolute;
+        top: 400vh;
+        left: 50vw;
+        transform: translateX(-50%);
+        margin-top: 10vh;
+        font-size: 4rem;
+    }
+    
 }
