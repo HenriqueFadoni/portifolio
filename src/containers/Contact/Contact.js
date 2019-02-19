@@ -4,6 +4,7 @@ import ProfessionalContact from './ProfessionalContact/ProfessionalContact';
 import Header from './Header/Header';
 import SocialMedia from './SocialMedia/SocialMedia';
 import Address from './Address/Address';
+import Email from './Email/Email';
 
 const Contact = () => {
     return (
@@ -13,9 +14,7 @@ const Contact = () => {
             <div className="vertical-bar"></div>
             <SocialMedia />
             <Address />
-            <h1 className="contact__email">
-                <a href="mailto:henriquefadonii@gmail.com">Contact Me By E-Mail</a>
-            </h1>
+            <Email />
         </section>
     );
 }
