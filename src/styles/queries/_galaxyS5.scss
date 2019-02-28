@@ -1,0 +1,70 @@
+// Welcome
+
+@media (max-width: 361px) {
+    .navbar {
+        &__container  {
+            position: absolute;
+            top: -100vh;
+        }
+
+        &__sticky {
+            animation: none;
+            animation-fill-mode: none;
+            z-index: 0;
+        }
+    }
+
+    .section-welcome { font-size: 2rem }
+
+    .welcome {
+        &-text {
+            &-container { width: 85% }
+            
+            &-2 { 
+                padding: 0 0 0 5%;
+                font-size: 1.6rem;
+                animation: welcomeAppear1GS5 2s forwards;
+            }
+        }
+
+        &-scroll-btn {
+            position: absolute;
+            top: -100vh;
+            animation: none;
+            animation-fill-mode: none;
+        }
+    }
+
+    .large-icons-container {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        animation: largeIconsGS5 .5s forwards;
+        animation-delay: 2s;
+
+        ion-icon { font-size: 5rem }
+    }
+}
+
+
+@keyframes largeIconsGS5 {
+    0% {
+        opacity: 0;
+        top: 75vh;
+    }
+    100% {
+        opacity: 1;
+        top: 65vh;
+    }
+}
+
+@keyframes welcomeAppear1GS5 {
+    0% {
+        padding: 10% 0 0 5%;
+        opacity: 0;
+    }
+    100% {
+        padding: 0 0 0 5%;
+        opacity: 1;
+    }
+}
