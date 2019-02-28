@@ -44,8 +44,58 @@
 
         ion-icon { font-size: 5rem }
     }
-}
 
+    // About
+
+    .section-about {
+        height: 200vh !important;
+
+        &__image {
+            width: 100% !important;
+            margin: 5vh 0 !important;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
+        }
+    }
+
+    .about {
+        &__headline { 
+            top: 107vh;
+
+            &_line { width: 20vw  !important}
+        }
+
+        &__icon {
+            opacity: 0;
+            position: absolute;
+            top: -100vh;
+        }
+    }
+
+    .grid {
+        &-row-content,
+        &-row {
+            display: block;
+            grid-column-gap: 0;
+            grid-row-gap: 0;
+            grid-template-columns: none;
+        }
+
+        
+        &-row { 
+            margin: 0 20vw;
+
+            &-content { padding: 0 }
+        }
+
+        &-1-of-3 {
+            padding: 0;
+
+            &__text {
+                h1 { margin: 15px 0 }
+            }
+        }
+    }
+}
 
 @keyframes largeIconsGS5 {
     0% {
