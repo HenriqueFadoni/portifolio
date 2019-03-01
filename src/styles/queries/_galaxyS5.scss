@@ -1,10 +1,12 @@
-// Welcome
-
 @media (max-width: 361px) {
+    // NavBar
+
     .navbar {
         &__container  { display: none }
         &__sticky { display: none }
     }
+
+    // Welcome
 
     .section-welcome { font-size: 2rem }
 
@@ -85,6 +87,65 @@
 
         &-1-of-2 { margin: 0 15px }
     }
+
+
+    // Portfolio
+
+    .portifolio {
+        height: 190vh !important;
+
+        &__headline { 
+            left: 30% !important;
+            &_line { width: 15vw !important}
+        }
+        
+        &__paragraph { margin: 0 15px }
+    }
+
+    .grid-row-portifolio { 
+        display: block;
+        &__1-of-4 {
+            margin: 5vh 0;
+            height: auto;
+        }
+    }
+
+    .btn-portifolio {
+        padding: 3vw;
+        color: $color-white;
+        background-color: $color-secondary;
+        border: none;
+    }
+
+    [class*="item"] {
+        .btn-portifolio { color: $color-white }
+
+        &:hover { transform: scale(1.05) }
+    }
+
+
+    // MODAL
+
+    .modal__container {
+        height: 85vh;
+        left: 5%;
+        width: 90%;
+        animation-name: showModalGS5;
+
+        &__content {
+            h1 { font-size: 3rem }
+            &__text { height: 60vh }
+        }
+
+        .btn-portifolio { 
+            padding: 0 3vw;
+            margin-right: 12vw;
+        }
+    }
+
+    .contact {
+        display: none;
+    }
 }
 
 @keyframes largeIconsGS5 {
@@ -106,5 +167,14 @@
     100% {
         padding: 0 0 0 5%;
         opacity: 1;
+    }
+}
+
+@keyframes showModalGS5 {
+    0%{
+        top: 140%;
+    }
+    100%{
+        top: 10%;
     }
 }

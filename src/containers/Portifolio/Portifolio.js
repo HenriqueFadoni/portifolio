@@ -82,7 +82,7 @@ class Portifolio extends Component {
                         show={this.state.isModalActive} 
                         backdropClick={this.modalHandler}/>
                     <div>
-                        <h1 className='portifolio__headline'>Portifolio</h1>
+                        <h1 className='portifolio__headline'>Portfolio</h1>
                         <div className='portifolio__headline_line'></div>
                     </div>
                     <p className='portifolio__paragraph'>
