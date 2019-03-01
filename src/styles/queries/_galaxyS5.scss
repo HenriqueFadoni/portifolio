@@ -3,7 +3,6 @@
 @media (max-width: 361px) {
     .navbar {
         &__container  { display: none }
-
         &__sticky { display: none }
     }
 
@@ -46,11 +45,18 @@
     }
 
     .about {
+        h2 { text-align: justify}
+        
         &__headline { 
-            top: 107vh;
+            top: 110vh;
 
-            &_line { width: 20vw  !important}
+            &_line { 
+                top: 15vh !important;
+                width: 20vw  !important;
+            }
         }
+
+        &__text { margin: 5vh 0 !important }
 
         &__icon { display: none }
     }
@@ -63,11 +69,9 @@
             grid-row-gap: 0;
             grid-template-columns: none;
         }
-
         
         &-row { 
             margin: 0 20vw;
-
             &-content { padding: 0 }
         }
 
@@ -78,6 +82,8 @@
                 h1 { margin: 15px 0 }
             }
         }
+
+        &-1-of-2 { margin: 0 15px }
     }
 }
 
