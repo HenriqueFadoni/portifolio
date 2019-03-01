@@ -2,16 +2,9 @@
 
 @media (max-width: 361px) {
     .navbar {
-        &__container  {
-            position: absolute;
-            top: -100vh;
-        }
+        &__container  { display: none }
 
-        &__sticky {
-            animation: none;
-            animation-fill-mode: none;
-            z-index: 0;
-        }
+        &__sticky { display: none }
     }
 
     .section-welcome { font-size: 2rem }
@@ -27,12 +20,7 @@
             }
         }
 
-        &-scroll-btn {
-            position: absolute;
-            top: -100vh;
-            animation: none;
-            animation-fill-mode: none;
-        }
+        &-scroll-btn { display: none }
     }
 
     .large-icons-container {
@@ -64,11 +52,7 @@
             &_line { width: 20vw  !important}
         }
 
-        &__icon {
-            opacity: 0;
-            position: absolute;
-            top: -100vh;
-        }
+        &__icon { display: none }
     }
 
     .grid {
