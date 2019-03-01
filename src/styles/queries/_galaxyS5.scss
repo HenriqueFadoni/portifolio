@@ -143,8 +143,51 @@
         }
     }
 
+    // CONTACT
+
     .contact {
-        display: none;
+        height: 130vh !important;
+        &__container-professional {
+            top: 530vh !important;
+            text-align: center;
+            width: 100%;
+            margin-left: 0 !important;
+        }
+
+        &__social-media {
+            width: 100% !important;
+            margin-left: 0 !important;
+
+            top: 573vh !important;
+            text-align: center;
+
+            ion-icon { 
+                font-size: 5rem !important;
+                color: $color-secondary;
+            }
+        }
+
+        &__address { display: none }
+
+        &__email {
+            font-size: 3rem !important;
+            top: 593vh !important;
+            text-align: center;
+            width: 100%;
+            transform: none;
+            a,
+            a:active { color: $color-white }
+
+            a:hover { font-size: 3rem !important }
+        }
+
+        .vertical-bar { display: none }
+    }
+
+    .footer {
+        height: 7vh !important;
+        font-size: 8px;
+        padding: 0 20px;
     }
 }
 
