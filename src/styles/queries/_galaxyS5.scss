@@ -95,7 +95,9 @@
         height: 190vh !important;
 
         &__headline { 
-            left: 30% !important;
+            width: 100%;
+            text-align: center;
+            left: 0 !important;
             &_line { width: 15vw !important}
         }
         
@@ -147,6 +149,9 @@
 
     .contact {
         height: 130vh !important;
+
+        &_line { width: 15vw !important }
+
         &__container-professional {
             top: 530vh !important;
             text-align: center;
@@ -190,6 +195,28 @@
         padding: 0 20px;
     }
 }
+
+
+
+@media (max-width: 321px) {
+    .section-about { height: 240vh !important }
+    .about {
+        &__headline_line { top: 17vh !important }
+        &__text { font-size: 2.3rem !important }
+    }
+
+    .contact {
+        height: 140vh !important;
+        &__header-backgr { font-size: 3rem }
+        &__container-professional { top: 570vh !important }
+        &__social-media {  top: 620vh !important }
+        &__email { 
+            top: 640vh !important;
+            font-size: 2.3rem !important;
+        }
+    }
+}
+
 
 @keyframes largeIconsGS5 {
     0% {
