@@ -9,9 +9,6 @@ I've learned a lot of new concepts and practices during this project. For instan
 ## Tecnologies Used
 
 - React
-- Redux
 - JavaScript ES 6 +
 - SASS
-- Jest/Ezyme
-- AWS Amplify
 - CSS3/HTML5
